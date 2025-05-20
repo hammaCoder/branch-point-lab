@@ -9,6 +9,7 @@ import { useAuth } from "./context/AuthContext";
 
 // Pages
 import LoginPage from "./pages/LoginPage";
+import CallbackPage from "./pages/CallbackPage";
 import GitHubAuthPage from "./pages/GitHubAuthPage";
 import CoursesPage from "./pages/CoursesPage";
 import LessonPage from "./pages/LessonPage";
@@ -41,6 +42,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/callback" element={<CallbackPage />} />
             <Route element={
               <ProtectedRoute>
                 <Layout />
